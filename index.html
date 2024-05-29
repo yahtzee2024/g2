@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pig Game</title>
+  </head>
+  <body>
+    <main>
+      <section class="player player--0">
+        <h2 class="name" id="name--0">Player 1</h2>
+        <p class="score" id="score--0">0</p>
+        <form action="/action_page.php">
+          <input type="radio" id="1-1" name="player1" value="Bike">
+          <label for="1-1" class="check-scores"> Aces 1</label><br>
+          <input type="radio" id="2-1" name="player1" value="Car">
+          <label for="2-1" class="check-scores"> Twos 2</label><br>
+          <input type="radio" id="3-1" name="player1" value="Boat">
+          <label for="3-1" class="check-scores"> Threes 3</label><br>
+          <input type="radio" id="4-1" name="player1" value="Bike">
+          <label for="4-1" class="check-scores"> Fours 4</label><br>
+          <input type="radio" id="5-1" name="player1" value="Car">
+          <label for="5-1" class="check-scores"> Fives 5</label><br>
+          <input type="radio" id="6-1" name="player1" value="Boat">
+          <label for="6-1" class="check-scores"> Sixes 6</label><br><br>
+          <div class="current1">
+            <p class="current-score check-scores">score : </p>
+            <p class="current-score check-scores" id="current--00">0</p>
+            <p class="current-score check-scores hidden" id="35-0"> + 35</p>
+          </div><br>
+          <input type="radio" id="7-1" name="player1" value="Bike">
+          <label for="7-1" class="check-scores"> 3 of a kind</label><br>
+          <input type="radio" id="8-1" name="player1" value="Car">
+          <label for="8-1" class="check-scores"> 4 of a kind</label><br>
+          <input type="radio" id="9-1" name="player1" value="Boat">
+          <label for="9-1" class="check-scores"> Full house</label><br>
+          <input type="radio" id="10-1" name="player1" value="Bike">
+          <label for="10-1" class="check-scores"> SM Straight</label><br>
+          <input type="radio" id="11-1" name="player1" value="Car">
+          <label for="11-1" class="check-scores"> LG Straight</label><br>
+          <input type="radio" id="12-1" name="player1" value="Boat">
+          <label for="12-1" class="check-scores"> Yahtzee</label><br>
+          <input type="radio" id="13-1" name="player1" value="Boat">
+          <label for="13-1" class="check-scores"> Chance</label><br><br>
+        </form>
+      </section>
+
+      <section class="player options">
+        <button class="btn btn--new">🔄 New game</button>
+        <div class="dices">
+          <label class="checkbox-container1 cnt">
+            <input type="checkbox" class="chkbox1">
+            <img src="dice-1.png" alt="Playing dice1" class="dice" />
+          </label>
+          <label class="checkbox-container2 cnt">
+            <input type="checkbox">
+            <img src="dice-2.png" alt="Playing dice2" class="dice" />
+          </label>
+          <label class="checkbox-container3 cnt">
+            <input type="checkbox">
+            <img src="dice-3.png" alt="Playing dice3" class="dice" />
+          </label>
+          <label class="checkbox-container4 cnt">
+            <input type="checkbox">
+            <img src="dice-4.png" alt="Playing dice4" class="dice" />
+          </label>
+          <label class="checkbox-container5 cnt">
+            <input type="checkbox">
+            <img src="dice-5.png" alt="Playing dice5" class="dice" />
+          </label>
+        </div>
+        <div class="btnDOWN">
+          <button class="btn btn--roll">🎲 Roll dice</button>
+          <button class="btn btn--hold">📥 Hold</button>
+        </div>
+        
+      </section>
+
+      
+      <section class="player player--1 player--active">
+        <h2 class="name" id="name--1">Player 2</h2>
+        <p class="score" id="score--1">0</p>
+        <form action="/action_page.php">
+          <input type="radio" id="1-2" name="player2" value="Bike">
+          <label for="1-2" class="check-scores"> Aces 1</label><br>
+          <input type="radio" id="2-2" name="player2" value="Car">
+          <label for="2-2" class="check-scores"> Twos 2</label><br>
+          <input type="radio" id="3-2" name="player2" value="Boat">
+          <label for="3-2" class="check-scores"> Threes 3</label><br>
+          <input type="radio" id="4-2" name="player2" value="Bike">
+          <label for="4-2" class="check-scores"> Fours 4</label><br>
+          <input type="radio" id="5-2" name="player2" value="Car">
+          <label for="5-2" class="check-scores"> Fives 5</label><br>
+          <input type="radio" id="6-2" name="player2" value="Boat">
+          <label for="6-2" class="check-scores"> Sixes 6</label><br><br>
+          <div class="current1">
+            <p class="current-score check-scores">Score : </p>
+            <p class="current-score check-scores" id="current--01">0</p>
+            <p class="current-score check-scores hidden" id="35-1"> + 35</p>
+          </div><br>
+          <input type="radio" id="7-2" name="player2" value="Bike">
+          <label for="7-2" class="check-scores"> 3 of a kind</label><br>
+          <input type="radio" id="8-2" name="player2" value="Car">
+          <label for="8-2" class="check-scores"> 4 of a kind</label><br>
+          <input type="radio" id="9-2" name="player2" value="Boat">
+          <label for="9-2" class="check-scores"> Full house</label><br>
+          <input type="radio" id="10-2" name="player2" value="Bike">
+          <label for="10-2" class="check-scores"> SM Straight</label><br>
+          <input type="radio" id="11-2" name="player2" value="Car">
+          <label for="11-2" class="check-scores"> LG Straight</label><br>
+          <input type="radio" id="12-2" name="player2" value="Boat">
+          <label for="12-2" class="check-scores"> Yahtzee</label><br>
+          <input type="radio" id="13-2" name="player2" value="Boat">
+          <label for="13-2" class="check-scores"> Chance</label><br><br>
+        </form>
+      </section> 
+
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
